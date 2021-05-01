@@ -56,5 +56,9 @@ public class Foo {
         // 임의의 인스턴스들을 거쳐가면서 (keesun -> whiteship -> toby 라는 String 인스턴스 차례로 거쳐감)
         // String 클래스의 compareToIgnoreCase 인스턴스 메소드를 사용함
         Arrays.sort(names, String::compareToIgnoreCase);
+
+        // 사실은 이것과 같은 표현
+        // 해당 람다식에 전달된 2개의 인자중 첫번째 인자의 인스턴스 메소드를 호출하기로 약속된것!!!
+        Arrays.sort(names, (s1, s2) -> s1.compareToIgnoreCase(s2));
     }
 }
