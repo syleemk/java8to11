@@ -47,6 +47,11 @@ public class App2 {
         sooyoungEvents.add(springClasses);
         sooyoungEvents.add(javaClasses);
 
+        /**
+         * Stream의 map : 일대일 매핑, element하나가 오면 result도 딱 하나.
+         * Stream의 flatMap : mapping해줄 객체가 컨테이너 성격의 객체일 경우, 그 안의 데이터들 꺼내서 매핑할 때 사용
+         * input은 하나지만, output이 여러 개인 경우 사용한다.
+         */
         System.out.println("두 수업 목록에 들어있는 모든 수업 아이디 출력");
         // 스트림에 들어있는 것이 그냥 객체가 아닌, 컬렉션 타입인 경우
         // 컬렉션 타입안에 또 여러 개의 인스턴스들이 존재
